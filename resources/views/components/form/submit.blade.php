@@ -1,0 +1,1 @@
+{!! Form::button('<i class="fal fa-hdd"></i> '.$value,array_merge(['class'=>'btn btn-primary','type'=>'submit'],$attributes)); !!}

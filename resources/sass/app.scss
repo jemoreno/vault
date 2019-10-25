@@ -1,1 +1,15 @@
-//
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+/* npm added libraries */
+@import '~select2/src/scss/core';
+@import url('../../node_modules/croppie/croppie.css');
+@import url('../../node_modules/dropzone/dist/dropzone.css');
+
+@import 'custom'
