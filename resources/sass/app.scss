@@ -11,5 +11,7 @@
 @import '~select2/src/scss/core';
 @import url('../../node_modules/croppie/croppie.css');
 @import url('../../node_modules/dropzone/dist/dropzone.css');
+@import '~sweetalert2/src/sweetalert2';
 
+/* custom css to load last */
 @import 'custom'

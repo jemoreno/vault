@@ -7,7 +7,7 @@ require( 'datatables.net-responsive-bs4' );
 require( 'datatables.net-scroller-bs4' );
 require('select2');
 require('summernote');
-require('sweetalert2');
+window.Swal = require('sweetalert2');
 
 window.croppie = require('croppie/croppie.js');
 window.Dropzone = require('dropzone');

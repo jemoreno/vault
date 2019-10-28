@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+Route::name('home')->get('/', function () {
     return view('welcome');
-})->name('home');
+});
 
 Auth::routes(['register'=>false]);
 
@@ -24,6 +24,8 @@ Route::name('vaults.')->group(function(){
 
   Route::post('loadDataForm', 'VaultsController@ajaxDataForm')->name('ajaxDataForm');
   Route::post('save','VaultsController@save')->name('save');
-  Route::post('update','VaultsController@update')->name('update');
+  Route::patch('update/{vault}','VaultsController@update')->name('update');
+
+  Route::delete('/destroy/{vault}','VaultsController@destroy')->name('destroy');
 });
 

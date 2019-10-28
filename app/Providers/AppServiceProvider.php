@@ -27,6 +27,8 @@ class AppServiceProvider extends ServiceProvider
     //Text
     Form::component('bsText','components.form.text',['name','value'=>null,'attributes'=>[],'labelOverride'=>null,'help'=>null]);
     Form::component('bsPassword','components.form.password',['name','value'=>null,'attributes'=>[],'labelOverride'=>null,'help'=>null]);
+    //Number
+    Form::component('bsNumber','components.form.number',['name','value'=>null,'attributes'=>[],'labelOverride'=>null,'help'=>null]);
     //File
     Form::component('bsFile','components.form.file',['name','inputLabel'=>null,'labelOverride'=>null,'attributes'=>[],'help'=>null]);
     //TextArea

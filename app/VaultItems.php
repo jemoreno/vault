@@ -6,9 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Encryption\DecryptException;
 use Illuminate\Support\Str;
 use App\Traits\UsesUuid;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 
 class VaultItems extends Model {
-  use UsesUuid;
+  use UsesUuid,SoftDeletes;
   protected $guarded          = ['id'];
   public $__data              = [];
   private $decrypted          = false;

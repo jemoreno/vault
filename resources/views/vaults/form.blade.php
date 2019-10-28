@@ -2,12 +2,12 @@
 @section('content')
   <div class="container">
     @if(isset($vault->id))
-      {!! Form::model($vault) !!}
+      {!! Form::model($vault,['route'=>['vaults.update',$vault],'method'=>'PATCH']) !!}
     @else
-      {!! Form::open(['route'=>'vaults.create']) !!}
+      {!! Form::open(['route'=>'vaults.save']) !!}
     @endif
-    {!! Form::bsText('title',null,[],'Title') !!}
-    {!! Form::bsSelect('vault_type',$types,null,['id'=>'vaultType','placeholder'=>'Select a type']) !!}
+    {!! Form::bsText('title',null,['required'=>true],'Title') !!}
+    {!! Form::bsSelect('vault_type',$types,null,['required'=>'true','id'=>'vaultType','placeholder'=>'Select a type']) !!}
     <div id="dataDiv">
 
     </div>

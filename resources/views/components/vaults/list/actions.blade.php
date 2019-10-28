@@ -9,5 +9,14 @@
       'attributes'  => [
         'href'        => route('vaults.show',$row->id),
       ]
+    ],
+    [
+      'icon'        => 'fa fa-trash',
+      'value'       => 'Delete',
+      'alt-class'   => 'btn-danger',
+      'attributes'  => [
+        'data-id'   => $row->id,
+        'class'     => 'toDel',
+      ]
     ]
   ]) !!}
