@@ -9,4 +9,4 @@ Vault is a simple demonstration of how to utilized UUIDs as primary keys in the 
 * mysql database
 
 ## Getting Started
-To get started quickly follow the wiki guide on [Getting-Started](https://github.com/jemoreno/vault/wiki/Getting_Started)
+To get started quickly follow the wiki guide on [Getting Started](https://github.com/jemoreno/vault/wiki/Getting-Started)
